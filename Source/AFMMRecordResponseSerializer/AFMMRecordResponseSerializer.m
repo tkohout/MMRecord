@@ -149,6 +149,7 @@ NSString * const AFMMRecordResponseSerializerWithDataKey = @"AFMMRecordResponseS
                                                 code:(*error).code
                                             userInfo:userInfo];
         (*error) = newError;
+        return nil;
     }
     
     NSEntityDescription *initialEntity = [self.entityMapper recordResponseSerializer:self
